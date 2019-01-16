@@ -19,6 +19,20 @@ $(document).ready(function () {
   $('body').bootstrapMaterialDesign();
 });
 
+/* =============================
+      Start niceScroll
+============================== */
+$(document).ready(function () {
+  $("html").niceScroll({
+    scrollspeed: "100",
+    cursorcolor: "#FFCA00",
+    cursorborder: "3px solid #FFCA00",
+    cursorborderradius: 0,
+    sensitiverail: true,
+    horizrailenabled: false,
+  });
+});
+
 /* ==================================
       Start Check the scroll position
 ===================================== */
