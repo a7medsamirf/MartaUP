@@ -34,7 +34,7 @@ body {
     padding: 0;
     font-family: "Raleway", sans-serif;
     background-color: #fff;
-    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 ul {
@@ -631,8 +631,5 @@ p {
     i.fas.fa-angle-double-up.fa-2x {
         font-size: 18px
     }
-    .wow{
-        animation-name: none !important;
-        visibility: visible !important;
-    }
+
 }
