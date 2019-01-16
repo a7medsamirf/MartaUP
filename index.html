@@ -1,0 +1,531 @@
+<!--A Design by Medala Solution
+Author: Ahmed Samir
+Author URL: https://www.facebook.com/a7med.samir.f
+License URL: https://github.com/a7medsamirf/MartaUP/blob/master/LICENSE
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>MartaUP</title>
+
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/BootstrapMaterialDesign.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/slick-theme.css" />
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="assets/images/logo.png">
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <!-- ======== Start Navbar ======== -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.png" class="img-fluid" alt="logo" style="max-width: 77%"> MartaUP
+            </a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar"
+                aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a id="home" class="nav-link active" data-scroll="" href="#home">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-scroll="" href="#about-services">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-scroll="" href="#work">WORK</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-scroll="" href="#blog">BLOG</a>
+                    </li>
+                    <li class="nav-item icon active dropdown">
+                        <i class="fas fa-search" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false"></i>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <form class="form-inline my-2 my-lg-0">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-warning my-2 my-sm-0" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#elegantModalForm">Signup
+                            / Login</button>
+                        <div class="modal fade" id="elegantModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content form-elegant">
+                                    <div class="modal-header text-center">
+                                        <h3 class="modal-title w-100 dark-grey-text font-weight-bold my-3" id="myModalLabel"><strong>Sign
+                                                in</strong></h3>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body mx-4">
+                                        <div class="md-form mb-5">
+                                            <div class="form-group">
+                                                <label for="exampleInputEmail1" class="bmd-label-floating">Email
+                                                    address</label>
+                                                <input type="email" class="form-control" id="exampleInputEmail1">
+                                            </div>
+
+                                            <div class="md-form pb-3">
+                                                <div class="form-group">
+                                                    <label for="exampleInputPassword1" class="bmd-label-floating">Password</label>
+                                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                                </div>
+                                                <p class="font-small blue-text d-flex justify-content-end">Forgot <a
+                                                        href="#" class="blue-text ml-1">
+                                                        Password?</a></p>
+                                            </div>
+                                            <div class="text-center mb-3">
+                                                <button type="button" class="btn btn-warning btn-block btn-rounded z-depth-1a waves-effect waves-light">Sign
+                                                    in</button>
+                                            </div>
+                                            <p class="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2">
+                                                or Sign in
+                                                with:</p>
+                                            <div class="row my-3 d-flex justify-content-center">
+                                                <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a waves-effect waves-light">
+                                                    <i class="fab fa-facebook-f blue-text text-center"></i>
+                                                    <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a waves-effect waves-light">
+                                                        <i class="fab fa-twitter blue-text"></i>
+                                                        <button type="button" class="btn btn-white btn-rounded z-depth-1a waves-effect waves-light">
+                                                            <i class="fab fa-google-plus-g blue-text"></i>
+                                                        </button>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer mx-5 pt-3 mb-1">
+                                            <p class="font-small grey-text d-flex justify-content-end">Not a member? <a
+                                                    href="#" class="blue-text ml-1">
+                                                    Sign Up</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ======== End Navbar ======== -->
+
+    <!-- ======== Start Header ======== -->
+    <section class="header d-flex align-items-center" id="header">
+        <div class="container">
+            <div class="content">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="left mt-5">
+                            <h1 class="wow fadeIn animated" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeIn;">We
+                                Build Apps & Websites
+                                <br>for Your Business</h1>
+                            <p class="wow fadeIn animated" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeIn;">For
+                                startups, For businesses & For you</p>
+                            <button type="button" class="btn btn-warning wow fadeIn animated" data-wow-delay="1s" style="visibility: visible; animation-delay: 1s; animation-name: fadeIn;">REQUEST
+                                A QUOTE</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-none d-lg-block">
+                        <div class="right">
+                            <div class="row" id="header-slick">
+                                <div class="col">
+                                    <img src="assets/images/Header/Header.png" alt="Header-img" class="img-fluid">
+                                </div>
+                                <div class="col">
+                                    <img src="assets/images/Header/Header2.png" alt="Header-img" class="img-fluid">
+                                </div>
+                                <div class="col">
+                                    <img src="assets/images/Header/Header3.png" alt="Header-img" class="img-fluid">
+                                </div>
+                                <div class="col">
+                                    <img src="assets/images/Header/Header4.png" alt="Header-img" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======== End Header ======== -->
+
+    <!-- ======== Start About Services ======== -->
+    <section id="about-services">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-6">
+                    <div class="heading mb-5">
+                        <h1 class="wow fadeIn animated animated" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeIn;">We
+                            are specialised in</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="services-box">
+                <div class="row text-center">
+                    <div class="col-lg-4 wow fadeIn animated" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeIn;">
+                        <img src="assets/images/services/UIUX.png" alt="UI/UX Design-img" class="img-fluid">
+                        <h3>UI/UX Design</h3>
+                        <p>In hac habitasse platea dictumstmus <br> adipiscing fermentum quam <br> volutpat aliquam.
+                            Integer cilisis <br> tristique.</p>
+                    </div>
+                    <div class="col-lg-4 wow fadeIn animated" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeIn;">
+                        <img src="assets/images/services/Web Development.png" alt="Web Development-img" class="img-fluid">
+                        <h3>Web Development</h3>
+                        <p>In hac habitasse platea dictumstmus <br> adipiscing fermentum quam <br> volutpat aliquam.
+                            Integer cilisis <br> tristique.</p>
+                    </div>
+                    <div class="col-lg-4 wow fadeIn animated" data-wow-delay="1s" style="visibility: visible; animation-delay: 1s; animation-name: fadeIn;">
+                        <img src="assets/images/services/App Development.png" alt="App Development-img" class="img-fluid">
+                        <h3>App Development</h3>
+                        <p>In hac habitasse platea dictumstmus <br> adipiscing fermentum quam <br> volutpat aliquam.
+                            Integer cilisis <br> tristique.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======== End About Services ======== -->
+
+    <!-- ======== Start Work ======== -->
+    <section id="work">
+        <div class="container">
+            <div class="row justify-content-center designers">
+                <div class="col-lg-5 offset-lg-1 wow fadeIn animated" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeIn;">
+                    <div class="heading mt-5">
+                        <h2>Experienced Designers &<br>Developers
+                        </h2>
+                        <p>Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum,
+                            neque sem pretium metus, quis mollis nisl nunc et massa.
+                        </p>
+                        <span>Vestibulum sed metus in lorem tristique ullamcorper id vitae erat</span>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn animated" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeIn;">
+                    <img src="assets/images/work/Designers.png" alt="Designers-img" class="img-fluid">
+                </div>
+            </div>
+            <div class="row justify-content-center prototyping mt-5">
+                <div class="col-lg-5 offset-lg-1 order-lg-2 wow fadeIn animated" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeIn;">
+                    <div class="heading mt-5">
+                        <h2>Information Architect &
+                            <br>Visual Prototyping
+                        </h2>
+                        <p>Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum,
+                            neque sem pretium metus, quis mollis nisl nunc et massa.
+                        </p>
+                        <span> Vestibulum sed metus in lorem tristique ullamcorper id vitae erat. Nulla mollis sapien
+                            sollicitudin lacinia lacinia. Nam dapibus nisl vitae elit fringilla rutrum. Aenean
+                            sollicitudin, erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et
+                            massa</span>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1 wow fadeIn animated" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeIn;">
+                    <img src="assets/images/work/Prototyping.png" alt="Prototyping-img" class="img-fluid">
+                </div>
+            </div>
+            <div class="row justify-content-center foundation mt-5">
+                <div class="col-lg-5 offset-lg-1 wow fadeIn animated" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeIn;">
+                    <div class="heading mt-5">
+                        <h2>Idea Generation &
+                            <br>Foundation
+                        </h2>
+                        <p>Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum,
+                            neque sem pretium metus, quis mollis nisl nunc et massa. Nam dapibus nisl vitae elit
+                            fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus,
+                            quis mollis nisl nunc et
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn animated" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeIn;">
+                    <img src="assets/images/work/Foundation.png" alt="Foundation-img" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======== End Work ======== -->
+
+    <!-- ======== Start Our Words ======== -->
+    <section id="our-words">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-6">
+                    <div class="heading mb-5">
+                        <h1 class="wow fadeIn animated animated" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeIn;">Don’t
+                            Just Take Our Words</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-4 mb-5 wow fadeIn animated" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeIn;">
+                    <div class="words-box">
+
+                        <div class="media">
+                            <img class="mr-3" src="assets/images/words/1.png" alt="words image">
+                            <div class="media-body">
+                                <h5 class="mt-0">Arakat Bank</h5>
+                                International Bank Ltd.
+                            </div>
+                        </div>
+                        <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus,
+                            vitae ullamcorper metus.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-5 wow fadeIn animated" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeIn;">
+                    <div class="words-box">
+                        <div class="media">
+                            <img class="mr-3" src="assets/images/words/2.png" alt="words image">
+                            <div class="media-body">
+                                <h5 class="mt-0">Chrsitopher Company Ltd.</h5>
+                                Design & Development
+                            </div>
+                        </div>
+                        <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus,
+                            vitae ullamcorper metus.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow fadeIn animated" data-wow-delay="1s" style="visibility: visible; animation-delay: 1s; animation-name: fadeIn;">
+                    <div class="words-box">
+                        <div class="media">
+                            <img class="mr-3" src="assets/images/words/3.png" alt="words image">
+                            <div class="media-body">
+                                <h5 class="mt-0">Jigsawlab Studio Inc.</h5>
+                                Interactive Prototyping
+                            </div>
+                        </div>
+                        <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus,
+                            vitae ullamcorper metus.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======== End Our Words ======== -->
+
+    <!-- ======== Start Latest Blog ======== -->
+    <section id="blog">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-md-6 wow fadeInUp  animated animated" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
+                    <div class="heading">
+                        <h1>Latest Blog</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-4 col-md-12 wow fadeIn  animated animated mb-5" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeIn;">
+                    <div class="post-slide">
+                        <div class="post-img">
+                            <a href="#" class="img-fluid"><img src="assets/images/Blog/1.jpg" alt=""></a>
+                        </div>
+                        <div class="post-content">
+                            <h3 class="post-title"><a href="#">Latest News Post</a></h3>
+                            <p class="post-description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec elementum mauris.
+                                Praesent vehicula gravida dolor, ac efficitur sem sagittis.
+                            </p>
+                            <ul class="post-bar">
+                                <li><i class="fa fa-calendar"></i>March 11,2018</li>
+                                <li>
+                                    <i class="fa fa-folder"></i>
+                                    <a href="#">Mockup</a>
+                                    <a href="#">Graphics</a>
+                                    <a href="#">ui/ux</a>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-danger">read more</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 wow fadeIn  animated animated mb-5" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeIn;">
+                    <div class="post-slide">
+                        <div class="post-img">
+                            <a href="#" class="img-fluid"><img src="assets/images/Blog/2.jpg" alt=""></a>
+                        </div>
+                        <div class="post-content">
+                            <h3 class="post-title"><a href="#">Latest News Post</a></h3>
+                            <p class="post-description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec elementum mauris.
+                                Praesent vehicula gravida dolor, ac efficitur sem sagittis.
+                            </p>
+                            <ul class="post-bar">
+                                <li><i class="fa fa-calendar"></i>March 11,2018</li>
+                                <li>
+                                    <i class="fa fa-folder"></i>
+                                    <a href="#">Mockup</a>
+                                    <a href="#">Graphics</a>
+                                    <a href="#">ui/ux</a>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-danger">read more</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 wow fadeIn animated" data-wow-delay="1s" style="visibility: visible; animation-delay: 1s; animation-name: fadeIn;">
+                    <div class="post-slide">
+                        <div class="post-img">
+                            <a href="#" class="img-fluid"><img src="assets/images/Blog/3.jpg" alt=""></a>
+                        </div>
+                        <div class="post-content">
+                            <h3 class="post-title"><a href="#">Latest News Post</a></h3>
+                            <p class="post-description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec elementum mauris.
+                                Praesent vehicula gravida dolor, ac efficitur sem sagittis.
+                            </p>
+                            <ul class="post-bar">
+                                <li><i class="fa fa-calendar"></i>March 11,2018</li>
+                                <li>
+                                    <i class="fa fa-folder"></i>
+                                    <a href="#">Mockup</a>
+                                    <a href="#">Graphics</a>
+                                    <a href="#">ui/ux</a>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-danger">read more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======== End Latest Blog ======== -->
+
+    <!-- ======== Start footer ======== -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mt-5">
+                    <div class="about-us wow fadeIn animated" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeIn;">
+                        <div class="logo-footer mb-4">
+                            <a href="index.html">
+                                <img src="assets/images/logo.png" class="img-fluid" alt="logo" style="max-width: 77%">
+                                MartaUP
+                            </a>
+                        </div>
+                        <div class="text mb-4">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam dolor eius ipsum
+                            necessitatibus, rerum soluta alias optio dicta eos, fuga praesentium tenetur animi
+                            harum officia incidunt ex omnis culpa voluptate!
+                        </div>
+                        <button type="button" class="btn btn-warning"><a href="#">Read More</a></button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-5">
+                    <div class="site-pages wow fadeIn animated" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeIn;">
+                        <h2 class="title">Site Pages</h2>
+                        <ul class="footer-menu mt-4">
+                            <li><a href="#"><i class="fas fa-angle-right"></i> About us</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right mt-3"></i> Careers</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right mt-3"></i> How we are</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right mt-3"></i> Faqs</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-5">
+                    <div class="location wow fadeIn animated" data-wow-delay="1s" style="visibility: visible; animation-delay: 1s; animation-name: fadeIn;">
+                        <h2 class="title">Location</h2>
+                        <div class="media mt-4">
+                            <i class="fas fa-map-marker-alt mt-3 mr-3 fa-lg"></i>
+                            <div class="media-body">
+                                <h5 class="mt-0">Location :</h5>
+                                <h4>Egypt - Cairo</h4>
+                            </div>
+                        </div>
+                        <div class="call-center mt-3">
+                            <h2 class="title">Call Center</h2>
+                            <div class="media">
+                                <i class="fas fa-phone mt-3 mr-3 fa-lg"></i>
+                                <div class="media-body">
+                                    <h5 class="mt-0">Call Us :</h5>
+                                    <h4>0123-456-789 </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 Instagram-feed d-none d-lg-block mt-5">
+                    <div class="instagram-feed wow fadeIn animated" data-wow-delay="1.2s" style="visibility: visible; animation-delay: 1.2s; animation-name: fadeIn;">
+                        <h2 class="title">Instagram feed</h2>
+                        <ul class="images-feed row no-gutters list-unstyled mt-4">
+                            <li class="col-lg-4 col-sm-6 col-xs-6">
+                                <a href="#" class="img-fluid"><img src="assets/images/instagram/instagram-1.jpg" alt=""></a>
+                            </li>
+                            <li class="col-lg-4 col-sm-6 col-xs-6">
+                                <a href="#" class="img-fluid"><img src="assets/images/instagram/instagram-2.jpg" alt=""></a>
+                            </li>
+                            <li class="col-lg-4 col-sm-6 col-xs-6">
+                                <a href="#" class="img-fluid"><img src="assets/images/instagram/instagram-3.jpg" alt=""></a>
+                            </li>
+                            <li class="col-lg-4 col-sm-6 col-xs-6">
+                                <a href="#" class="img-fluid"><img src="assets/images/instagram/instagram-4.jpg" alt=""></a>
+                            </li>
+                            <li class="col-lg-4 col-sm-6 col-xs-6">
+                                <a href="#" class="img-fluid"><img src="assets/images/instagram/instagram-5.jpg" alt=""></a>
+                            </li>
+                            <li class="col-lg-4 col-sm-6 col-xs-6">
+                                <a href="#" class="img-fluid"><img src="assets/images/instagram/instagram-6.jpg" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright text-center py-3 mt-5">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="copy-right-text text-lg-left">© 2019 March - by
+                            <a href="#">Medala Theme</a> - All rights reserved </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <ul class="social-media">
+                            <li class="list-inline-item"><a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li class="list-inline-item"><a class="youtube" href="#"><i class="fab fa-youtube"></i></a></li>
+                            <li class="list-inline-item"><a class="linkedin" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li class="list-inline-item"><a class="google" href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                            <li class="list-inline-item"><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li class="list-inline-item"><a class="rss" href="#"><i class="fas fa-rss"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ======== Start footer ======== -->
+
+    <!-- ======== Start scrollToTop ======== -->
+    <a class="scrollToTop" href="#">
+        <i class="fas fa-angle-double-up fa-2x" aria-hidden="true"></i>
+    </a>
+    <!-- ======== End scrollToTop ======== -->
+
+    <!-- jquery library -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/BootstrapMaterialDesign.js"></script>
+    <script src="assets/js/smooth-scroll.js"></script>
+    <script src="assets/js/jquery.nicescroll.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,638 @@
+/*
+Template Name: MartaUP | Personal Portfolio HTML5 Template
+Author: Ahmed Samir
+Author URI: https://www.facebook.com/a7med.samir.f
+Description: MartaUP | Personal Portfolio HTML5 Template
+Version: 1.0
+Tags: bootstrap, clean, creative, cv, freelancer, gallery, html5, one page, personal, portfolio, responsive, resume, simple, vcard
+*/
+
+/*
+Style Index
+==================================================
+    1.  Basic Setup
+    2.  Navigation Bar
+    3.  Header Section
+    4.  About Services Section
+    5.  Work Section
+    6.  Our Words Section
+    7.  Blog Section
+    8.  Footer Section
+    9. scrollToTop
+    10. Media Query Section
+    */
+
+/*--------------------------------------------------
+[1. Start Basic Setup ]
+--------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+span {
+    color: #FFCA00;
+}
+
+a {
+    color: #02ecf1
+}
+
+a:hover {
+    color: #FFCA00;
+    text-decoration: none;
+}
+
+h1 {
+    font-weight: bold;
+    font-family: "Josefin Sans";
+}
+
+p {
+    color: #272727
+}
+
+.btn-secondary {
+    background-color: #181b1e !important;
+}
+
+.custom-file-control,
+.form-control,
+.is-focused .custom-file-control,
+.is-focused .form-control {
+    background-image: linear-gradient(0deg, #FFCA00 2px, rgba(0, 150, 136, 0) 0), linear-gradient(0deg, rgba(0, 0, 0, .26) 1px, transparent 0);
+}
+
+.btn-warning {
+    background: #FFCA00 !important;
+    color: #fff !important;
+    font-size: 13px;
+    margin: 0;
+}
+
+.btn-danger.custom-file-control::before,
+.btn.btn-danger {
+    background: #FFCA00 !important;
+    color: #fff !important;
+    font-size: 13px;
+}
+
+.dropdown-menu {
+    top: 100%;
+    right: 0;
+    z-index: 1000;
+    min-width: 20rem;
+    padding: 0.9rem 25px;
+    margin: 1.3rem 0px 0px;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+}
+
+.bmd-form-group input.custom-file-control,
+.bmd-form-group input.custom-file-control::-webkit-input-placeholder,
+.bmd-form-group input.form-control,
+.bmd-form-group input.form-control::-webkit-input-placeholder {
+    color: #000;
+}
+
+.bmd-form-group input.custom-file-control,
+.bmd-form-group input.custom-file-control:-ms-input-placeholder,
+.bmd-form-group input.form-control,
+.bmd-form-group input.form-control:-ms-input-placeholder {
+    color: #000;
+}
+
+.bmd-form-group input.custom-file-control,
+.bmd-form-group input.custom-file-control::-ms-input-placeholder,
+.bmd-form-group input.form-control,
+.bmd-form-group input.form-control::-ms-input-placeholder {
+    color: #000;
+}
+
+.bmd-form-group input.custom-file-control,
+.bmd-form-group input.custom-file-control::placeholder,
+.bmd-form-group input.form-control,
+.bmd-form-group input.form-control::placeholder {
+    color: #000;
+}
+
+.is-focused [class*=" bmd-label"],
+.is-focused [class^=bmd-label] {
+    color: #FFCA00
+}
+
+/*--------------------------------------------------
+[2. Start Navigation Bar ]
+--------------------------------------------------*/
+
+.fixed-top.scrolled {
+    background-color: #fff !important;
+    -webkit-transition: background-color 700ms ease-in-out;
+    transition: background-color 700ms ease-in-out;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    z-index: 999;
+}
+
+.bg-dark {
+    background-color: rgba(0, 0, 0, 0) !important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding: 15px
+}
+
+.navbar-dark .navbar-nav .active>.nav-link {
+    color: #FFCA00;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+    color: #FFCA00;
+}
+
+.navbar-dark .navbar-toggler {
+    color: #fff;
+    border-color: #ffca00;
+    background: #ffca00;
+    border-radius: 56%;
+    height: 55px;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #FFCA00;
+}
+
+.fixed-top.scrolled .nav-link,
+.fixed-top.scrolled .active {
+    color: #000;
+}
+
+.fixed-top.scrolled .navbar-brand,
+.navbar .navbar-brand {
+    color: #ffca00;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: "Josefin Sans";
+}
+
+.navbar-dark .icon {
+    color: #fff;
+    font-size: 18px;
+    margin-right: 20px;
+    padding-top: 5px;
+    cursor: pointer;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.navbar-dark .icon .active {
+    color: #000;
+}
+
+.navbar-dark .button.btn.btn-warning {
+    margin: 0;
+}
+
+/*--------------------------------------------------
+[3. Start Header Section ]
+--------------------------------------------------*/
+
+.header {
+    background: url('../images/Header/Header-bg.png') center center no-repeat;
+    background-size: cover;
+    height: 120vh;
+}
+
+.header .content .left h1 {
+    font-weight: bold;
+    color: #ffffff;
+    line-height: 55px;
+    margin: 0;
+    padding: 0;
+}
+
+.header .content .left p {
+    font-size: 16px;
+    font-weight: 300;
+    color: #ffffff;
+    line-height: 26px;
+    padding: 0;
+    margin: 10px 0 30px;
+}
+
+.header .content .left .btn-1 {
+    background: #ffffff;
+    -webkit-box-shadow: 1px 1px 30px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px 30px 0 rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    color: #3b566e;
+    border-radius: 65px;
+    padding: 10px 45px;
+    font-size: 15px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.header .content .left .btn-2 {
+    background: transparent;
+    border: 1px solid #ffffff;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 65px;
+    padding: 10px 45px;
+    margin-left: 15px;
+    font-size: 15px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+/*--------------------------------------------------
+[4. Start About Services Section ]
+--------------------------------------------------*/
+
+#about-services {
+    padding: 100px 0;
+    position: relative;
+}
+
+#about-services .services-box::after {
+    content: "";
+    position: absolute;
+    right: 88%;
+    top: 65%;
+    background: url(../images/services/Style.png) center center no-repeat;
+    background-size: cover;
+    width: 523px;
+    height: 422px;
+    min-width: 30%;
+    z-index: 9;
+}
+
+/*--------------------------------------------------
+[5. Start Work Section ]
+--------------------------------------------------*/
+
+#work {
+    padding: 100px 0;
+    position: relative;
+    background-color: #F4F9FD
+}
+
+#work span {
+    color: #000
+}
+
+#work .prototyping {
+    padding: 50px 0;
+}
+
+#work .designers .heading::after {
+    content: "";
+    position: absolute;
+    background: url(../images/work/Designers-bg.png) center center no-repeat;
+    background-size: cover;
+    width: 44%;
+    height: 48%;
+    top: -30px;
+    left: -10px;
+}
+
+#work .prototyping .heading::after {
+    content: "";
+    position: absolute;
+    background: url(../images/work/Prototyping-bg.png) center center no-repeat;
+    background-size: cover;
+    width: 65%;
+    height: 45%;
+    top: 0px;
+    left: -44px;
+}
+
+#work .prototyping .heading::before {
+    content: "";
+    position: absolute;
+    left: 95%;
+    top: 0px;
+    background: url(../images/work/before.png) center center no-repeat;
+    background-size: cover;
+    width: 505px;
+    height: 391px;
+}
+
+
+#work .foundation .heading::after {
+    content: "";
+    position: absolute;
+    background: url(../images/work/Foundation-bg.png) center center no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 40%;
+    top: -13px;
+    left: -30px;
+}
+
+/*--------------------------------------------------
+[6. Start Our Words Section ]
+--------------------------------------------------*/
+
+#our-words {
+    padding: 100px 0;
+    position: relative;
+    background: url(../images/words/our-words-bg.png) center center no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+#our-words .words-box {
+    background-color: rgba(255, 255, 255, 0.39);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+#our-words .words-box p {
+    color: #fff;
+}
+
+#our-words .media {
+    text-align: left
+}
+
+/*--------------------------------------------------
+[7. Start Blog Section ]
+--------------------------------------------------*/
+
+#blog {
+    padding: 100px 0;
+}
+
+.post-slide {
+    margin: 0 15px;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+}
+
+.post-slide .post-img {
+    overflow: hidden;
+}
+
+.post-slide .post-img img {
+    width: 100%;
+    height: auto;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s;
+}
+
+.post-slide:hover .post-img img {
+    -webkit-transform: scale(1.08);
+    transform: scale(1.08);
+}
+
+.post-slide .post-content {
+    background: #fff;
+    padding: 20px;
+}
+
+.post-slide .post-title {
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 0;
+    text-transform: capitalize;
+}
+
+.post-slide .post-title a {
+    display: inline-block;
+    color: #808080;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.post-slide .post-title a:hover {
+    color: #3d3030;
+    text-decoration: none;
+}
+
+.post-slide .post-description {
+    font-size: 15px;
+    color: #676767;
+    line-height: 24px;
+    margin-bottom: 14px;
+}
+
+.post-slide .post-bar {
+    padding: 0;
+    margin-bottom: 15px;
+    list-style: none;
+}
+
+.post-slide .post-bar li {
+    color: #676767;
+    padding: 2px 0;
+}
+
+.post-slide .post-bar li i {
+    margin-right: 5px;
+}
+
+.post-slide .post-bar li a {
+    display: inline-block;
+    font-size: 12px;
+    color: #808080;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.post-slide .post-bar li a:after {
+    content: ",";
+}
+
+.post-slide .post-bar li a:last-child:after {
+    content: "";
+}
+
+.post-slide .post-bar li a:hover {
+    color: #3d3030;
+    text-decoration: none;
+}
+
+.post-slide .btn-danger {
+    border-radius: 0;
+}
+
+/*--------------------------------------------------
+[8. Start Footer Section ]
+--------------------------------------------------*/
+
+#footer {
+    padding-top: 100px;
+    background-color: #13253B;
+    color: #fff;
+    background-image: url(../images/footer-bg.jpg);
+    background-size: cover;
+    color: #4a4a4a
+}
+
+#footer .about-us .logo-footer a {
+    color: #ffca00;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: "Josefin Sans";
+}
+
+#footer .site-pages a {
+    color: #4a4a4a;
+    padding: 5px;
+}
+
+#footer .about-us a {
+
+    color: #fff;
+}
+
+#footer .location h5 {
+    font-size: 1rem;
+}
+
+#footer .location h4 {
+    font-size: 1.2rem;
+}
+
+#footer .location i {
+    color: #ffca00
+}
+
+#footer .Instagram-feed img {
+    width: 100%;
+    padding: 5px;
+}
+
+#footer .footer-copyright .social-media li a {
+    color: #4a4a4a;
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding: 6px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+}
+
+#footer .footer-copyright .social-media li a:hover {
+    background-color: #ffca00;
+    color: #fff;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+/*--------------------------------------------------
+[9. Start scrollToTop ]
+--------------------------------------------------*/
+.scrollToTop {
+    width: 50px;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+    background-color: #ffca00;
+    color: #ffffff;
+    position: fixed;
+    right: 10px;
+    bottom: 40px;
+    z-index: 1;
+    -webkit-transform: translate(80px, 0);
+    transform: translate(80px, 0);
+    -webkit-transition: .2s ease;
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+}
+
+.scrollToTop:hover {
+    background-color: #ffca00;
+    color: #ffffff;
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+}
+
+/*--------------------------------------------------
+[10. Start Media Query Section]
+--------------------------------------------------*/
+
+@media only screen and (max-width: 990px) {
+    .header {
+        height: 100vh;
+    }
+
+    #about-services,
+    #work,
+    #our-words,
+    #blog {
+        padding: 70px 0
+    }
+
+    #work .prototyping {
+        padding: 0;
+    }
+
+    #footer {
+        padding-top: 70px;
+    }
+
+    #footer .footer-copyright>div {
+        font-size: 15px
+    }
+
+    #footer .social-media {
+        padding-top: 20px;
+    }
+
+    .scrollToTop {
+        width: 40px;
+        text-align: center;
+        background-color: #ffca00;
+        color: #ffffff;
+        position: fixed;
+        right: 10px;
+        bottom: 120px;
+    }
+
+    i.fas.fa-angle-double-up.fa-2x {
+        font-size: 18px
+    }
+    .wow{
+        animation-name: none !important;
+        visibility: visible !important;
+    }
+}
